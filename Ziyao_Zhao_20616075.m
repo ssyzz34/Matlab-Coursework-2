@@ -97,3 +97,13 @@ fprintf(fileID, '| Max temp       | %6.2f C |\n', max_temp);
 fprintf(fileID, '| Min temp       | %6.2f C |\n', min_temp);
 fprintf(fileID, '| Average temp   | %6.2f C |\n', avg_temp);
 fclose(fileID);  % Make sure the file is closed
+
+
+%% TASK 2 - LED TEMPERATURE MONITORING DEVICE IMPLEMENTATION
+
+% Initialize Arduino connection
+clear; clc;
+a = arduino('COM4', 'Uno');
+
+% Call temperature monitoring function (runs indefinitely)
+% temp_monitor(a);
